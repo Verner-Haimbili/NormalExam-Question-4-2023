@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
+// a) Implement a console application that creates and undirected graph that represents a friendship network. Add at least five nodes (representing people) and some edges (representing friendship relationship)
 public class MyGraphExample {
 	@SuppressWarnings("unused")
 	private static void PrintFriends(List<Node> nodes) {
@@ -59,6 +60,7 @@ public class MyGraphExample {
 		if (node1 != null && node2 != null) {
 
 			// Checking friendship
+			// b) Given the names of two people return, if they are friends.
 			boolean connected = friendshipGraph.Adjacent(node1, node2);
 			if (connected) {
 				System.out.println(node1.GetInfo() + " and " + node2.GetInfo() + " are friends.");
@@ -70,6 +72,7 @@ public class MyGraphExample {
 		}
 
 		// Checking common friend
+		// c) Given the names of two people, return if they have a common friend.
 		Node node3 = friend3;
 
 		if (node1 != null && node2 != null) {
